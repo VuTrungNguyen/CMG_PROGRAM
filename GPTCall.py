@@ -54,7 +54,7 @@ def ask_chatgpt_online(myPrompt, myContent, model="gpt-4o-2024-08-06",max_tokens
                 #'model': 'gpt-3.5-turbo',  # test well then change to gpt-4
                 "messages": msg, # f"{prompt} Answer without explanation:" can do it more precise
                 "max_tokens": max_tokens, #4096, # Adjust this value to limit the response data
-                "temperature": temperature #0.2 # Lower values (e.g., 0.5) will make the output more focused and deterministic, while higher values (e.g., 1.0) will make it more random.
+                "temperature": temperature #0.2 
             }
     
     response = requests.post(endpoint, headers=headers, json=data).json()

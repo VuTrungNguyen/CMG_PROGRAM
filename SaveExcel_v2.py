@@ -26,10 +26,6 @@ def update_sheet_preserving_format(excel_file, sheet_name, df):
         book.save(new_filename)
         print(f"Original file was open; changes were saved to '{new_filename}' instead.")
 
-#usage example
-#data_sheets = [('original_text', df_original_text), ('keysections', df_keysections)]
-#SaveExcel_v2.update_list_sheets_preserving_format(myexcelfile, data_sheets)
-    
 
 def update_list_sheets_preserving_format(excel_file, data_sheets):
     # Load the workbook
