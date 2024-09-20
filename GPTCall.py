@@ -20,10 +20,10 @@ def read_api_key(process_knowledge_file_fullpath):
     # filtered_df = df[(df['knowledge_area'] == "chatgpt_apikey") ]
     filtered_df = df[df['knowledge_area'].isin(["chatgpt_apikey", "chatgpt_organization", "chatgpt_project"])]
     if filtered_df.empty: 
+        sheet_name = "knowledge"
         print("\nChatGPT API Key, Organization, or Project not found in the Excel file. Please check the '{}' sheet.\n".format(sheet_name))
         return "no_apikey"    
     else:
-        api_key=filtered_df.iloc[0]['knowledge']
         # return api_key
         return filtered_df['knowledge'].iloc[:3].tolist()
 
