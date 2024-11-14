@@ -1,6 +1,7 @@
 # Cognitive Map Graph Processing
 This repository contains scripts and notebooks for processing clinical notes and medical data to generate cognitive map graphs. The project leverages various tools and libraries to read, process, and analyze medical data, including the use of GPT models for natural language processing tasks.
 ## Repository Structure
+```bash
 .
 ├── __pycache__/
 ├── .ipynb_checkpoints/
@@ -34,6 +35,7 @@ This repository contains scripts and notebooks for processing clinical notes and
 │   └── tw_translated_jsonl/
 └── notebook_template.ipynb
 Sorry for the mess teehee. I do use this repo as a scratchpad for developing Retrieval function.
+```
 
 ## Key Files and Directories
 - CMG_Anthropic.ipynb: Notebook for processing data using Anthropic's API.
